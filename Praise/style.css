@@ -9,8 +9,8 @@ body {
 }
 
 .card {
-  width: 390px;
-  height: 545px;
+  width: 340px;
+  height: 495px;
   perspective: 1000px;
   cursor: pointer;
 }
@@ -42,6 +42,7 @@ body {
 }
 
 .card-front {
+  justify-content: center;
   background: linear-gradient(to bottom right, #ff6b81, #fbc531);
   color: white;
 }
