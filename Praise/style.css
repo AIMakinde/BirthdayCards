@@ -3,9 +3,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
   background: linear-gradient(to bottom right, #fceabb, #f8b500);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
 }
 
 .card {
