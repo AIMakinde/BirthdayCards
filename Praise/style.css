@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom right, #fceabb, #f8b500);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-front {
+  background: linear-gradient(to bottom right, #ff6b81, #fbc531);
+  color: white;
+}
+
+.card-front h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.card-front p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.hint {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  opacity: 0.85;
+}
+
+.card-back {
+  background: white;
+  color: #333;
+  transform: rotateY(180deg);
+  overflow-y: auto;
+}
+
+.card-back p, .card-back blockquote, .card-back .signature {
+  margin-bottom: 15px;
+}
+
+.signature {
+  font-weight: bold;
+  font-style: italic;
+}
