@@ -3,9 +3,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to bottom right, #fceabb, #f8b500);
+  background: linear-gradient(to bottom, #ffc0cb, #ffe4e1);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 .card {
@@ -13,6 +14,9 @@ body {
   height: 495px;
   perspective: 1000px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-inner {
@@ -36,14 +40,14 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 20px;
-  text-align: justify;
+  text-align: center;
 }
 
 .card-front {
-  justify-content: center;
-  background: linear-gradient(to bottom right, #ff6b81, #fbc531);
+  background: linear-gradient(to bottom right, #ff69b4, #ffb6c1, #ffc0cb);
   color: white;
 }
 
@@ -77,4 +81,20 @@ body {
 .signature {
   font-weight: bold;
   font-style: italic;
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 90vw;
+    height: auto;
+  }
+  .card-front h1 {
+    font-size: 2rem;
+  }
+  .card-front p {
+    font-size: 1rem;
+  }
+  .card-back {
+    font-size: 0.9rem;
+  }
 }
