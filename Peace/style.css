@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to bottom, #ffc0cb, #ff8d6e);
+  background: linear-gradient(to bottom, #e6d9ff, #c3b1e1);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
@@ -48,7 +48,12 @@ body {
 
 .card-front {
   justify-content: center;
-  background: linear-gradient(to bottom right, #b21262, #e06f6f, #ffbde0);
+  background: linear-gradient(
+    to bottom right,
+    #5e2b97,
+    #9b6fd6,
+    #e3d4ff
+  );
   color: white;
 }
 
@@ -75,7 +80,9 @@ body {
   overflow-y: auto;
 }
 
-.card-back p, .card-back blockquote, .card-back .signature {
+.card-back p,
+.card-back blockquote,
+.card-back .signature {
   margin-bottom: 15px;
 }
 
